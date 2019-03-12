@@ -1,0 +1,16 @@
+h1 {
+    font-size: 30px;
+}
+
+header {
+    height: 100px;
+    text-align: center;
+    background-color: #e0ffef;
+    margin: 0 auto;
+    padding: 5px;
+    font-family: 'Sniglet', cursive;
+}
+
+nav {
+    height: 50px;
+}

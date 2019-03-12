@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#main {
+    border: 2px solid;
+    border-color: #4844ff;
+    width: 250px;
+    margin: 24px auto;
+    background-color: #a1ffe9;
+    border-radius: 10px;
+}
+
+div,#submit {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
