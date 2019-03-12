@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Chat application</title>
+        <title>xxx_durello69_xxx</title>
         <link rel="stylesheet" href="css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Sniglet" rel="stylesheet">
     </head>
