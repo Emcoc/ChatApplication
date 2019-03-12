@@ -20,9 +20,28 @@
 		?>
 		
 		<div id="main">
-		<div id="message_area">
-		</div>
+		<div id="message_area">	
+		<?php	include("connection.php");
 		
+			$q1 = "SELECT * FROM message";
+			$r1 = mysqli_query($con, $q1);
+			while($row = mysqli_fetch_assoc($r1){
+				$message = $row['message'];
+				$username = $row['username'];
+				echo '<h4>' .$username. '</h4>';
+				echo '<p>' .$message. '</p>';
+				echo '<hr>';
+			}
+			if(isset($_POST['submit'])){
+				$message = $_POST['message'];
+				$q = 'INSERT INTO message (id, message, username VALUES("", "'.$message.'", "'.$_SESSION['username'].'")';
+				if(mysqli_query($con, $q)){
+					echo '<h4 style = "color:red">' .$_SESSION['username']. '</h4>';
+					echo '<p>' .$message. '</p>';
+				}
+			}
+		?>
+		</div>	
 		<form method="post">
 		<input type= "text" name = "message" placeholder = "Scrivi un messaggio...">
 		<input type = "submit" name = "submit" value = "Message" />
